@@ -10,8 +10,8 @@
     <string name="backHomeBtn">Back to Sign Up Page</string>
     <string name="country_selection">select country</string>
     <string name="newUserCheck">I am a New User</string>
-
-
+    <string name="newUserChecked">You checked New User</string>
+    <string name="remberPassword">Remember my Password</string>
 
     <string name="china">China</string>
     <string name="india">India</string>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initialUISetup();
+
     }
 
     public void initialUISetup(){
@@ -37,6 +39,15 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
 
         remPassword.setOnCheckedChangeListener(new signUpCheckBoxChangeListerner());
         newUser.setOnCheckedChangeListener(new signUpCheckBoxChangeListerner());
+
+        String[] languages = {"Chinese", "English", "French"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this,
+                R.layout.spinner_item,
+                R.id.spinnerText,
+                languages);
+        Log.i("onCreat", "onCreated Started");
+        spinner.setAdapter(adapter);
 
     }
     public void signUpHandler(View view) {
