@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_mainpage"
+    tools:context="com.rjt.android.signup.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+
+        style="@style/editTextStyle"
+        android:inputType="textPersonName"
+        android:hint="@string/userName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/editTextStyle"
+        android:layout_below="@+id/editTextName"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rememberPw"
+        android:id="@+id/checkBox" />
+
+    <RelativeLayout
+        android:layout_below="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:onClick="signUpHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+
+            android:text="@string/signUp" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/login" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

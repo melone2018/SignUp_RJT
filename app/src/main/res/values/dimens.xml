@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="welcome_margin">50dp</dimen>
+    <dimen name="welcome_size">30sp</dimen>
+</resources>

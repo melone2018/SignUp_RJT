@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Trivial SignUp</string>
+    <string name="userName">Full Name</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="rememberPw">Remember Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="welcomeMsg">Thanks for Signing up!</string>
+    <string name="backHomeBtn">Back to Sign Up Page</string>
+</resources>
