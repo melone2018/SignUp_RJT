@@ -24,16 +24,20 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void welcomeHandler() {
+        Log.i("welcomeHandler", "welcomeHandler method started");
         TextView greetView = findViewById(R.id.welcomeTextView);
         String userName = getIntent().getExtras().getString("nameKey");
         //Log.d();
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/orange juice 2.0.ttf");
-        greetView.setText("Hi " + userName +", thanks for signing up!");
+        StringBuilder showMsg = new StringBuilder("Hi ");
+        showMsg.append(userName);
+        showMsg.append(", thanks for signing up!");
+        greetView.setText(showMsg.toString());
         greetView.setTypeface(typeface);
     }
 
     public void backSignUpHandler(View view) {
-        Button backSignUpBtn = findViewById(R.id.backHomeButton);
+        Log.i("backSignUpHanlder", "Back to Sign Up Page");
         Intent backHomeIntent = new Intent(this, MainActivity.class);
         startActivity(backHomeIntent);
     }
