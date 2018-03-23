@@ -8,4 +8,5 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="welcomeMsg">Thanks for Signing up!</string>
     <string name="backHomeBtn">Back to Sign Up Page</string>
+    <string name="country_selection">select country</string>
 </resources>

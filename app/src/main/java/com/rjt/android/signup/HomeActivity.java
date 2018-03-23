@@ -15,16 +15,18 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
-
+    private static final String TAG = "HomeActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         welcomeHandler();
     }
 
+
     public void welcomeHandler() {
-        Log.i("welcomeHandler", "welcomeHandler method started");
+        Log.i(TAG, "welcomeHandler: ");
         TextView greetView = findViewById(R.id.welcomeTextView);
         String userName = getIntent().getExtras().getString("nameKey");
         //Log.d();
