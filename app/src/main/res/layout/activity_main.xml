@@ -30,6 +30,15 @@
         android:text="@string/rememberPw"
         android:id="@+id/checkBox" />
 
+    <CheckBox
+        android:id="@+id/newUserCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newUserCheck"/>
+
 
     <RelativeLayout
         android:layout_below="@+id/checkBox"

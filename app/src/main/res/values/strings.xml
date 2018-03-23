@@ -9,4 +9,12 @@
     <string name="welcomeMsg">Thanks for Signing up!</string>
     <string name="backHomeBtn">Back to Sign Up Page</string>
     <string name="country_selection">select country</string>
+    <string name="newUserCheck">I am a New User</string>
+
+
+
+    <string name="china">China</string>
+    <string name="india">India</string>
+    <string name="usa">United States</string>
+    <string name="uk">United Kindom</string>
 </resources>
